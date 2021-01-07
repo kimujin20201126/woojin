@@ -1,20 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS3 property basec</title>
-    <style>
-        div {
-            border: 3px solid brown;
-            box-shadow: 10px 10px 30px coral;
-            text-shadow: 5px 5px 5px blue
-        }
-    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://scdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    
+    <title>Hello, world!</title>
 
     <style>
-        ul {
+        body
+        {
+            padding-top : 80px;
+        }
+    </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    
+  </head>
+  <body>
+    <!-- div.navbar.navbar-dark.bg-dark -->
+    <div class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+        <div class="container">
+            <!-- a.navbar-brand[href=#] -->
+            <a class="navbar-brand" href="#">목차</a>
+            <!-- button.navbar-toggler[type=button data-toggle=collapse] -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+            
+            <!-- span.navbar-toggler-icon -->
+            <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mr-auto">   <!--옛날꺼 mr-auto, 지금 me-auto -->
+                    <!-- (li.nav-item>a.nav-link[href=#]{내용$})*5 -->
+                    <li class="nav-item dropdown">
+                 <!-- a.nav-link.dropdown-toggle[href=# datatoggle=dropdown]{HTML} -->
+                <a href="#" class="nav-link dropdown-toggle"                 data-toggle="dropdown">
+                    홈페이지</a>
+                    <div class="dropdown-menu">
+                        <!-- a.dropdown-item[href=#]{Hi$}*2 -->
+                        <a href="#" class="dropdown-item">Hi1</a>
+                        <a href="#" class="dropdown-item">Hi2</a>
+                        <!-- div.dropdown-divider -->
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Motion</a>
+                    </div>
+
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.aladin.co.kr/usedstore/wstoremain.aspx?offcode=Daegu">중책</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://www.kyobobook.co.kr/index.laf">교보</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://www.q-net.or.kr/man001.do?gSite=Q">큐넷</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://cafe.naver.com/kcidorcen/book2858194">편입</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://finance.naver.com/">취업</a></li>
+                </ul>
+                <!-- form.form-inline -->
+                <form class="form-inline">
+                    <input type="text" class="form-control" 
+                    placeholder="Search">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                <!--<ul class="navbar-nav">-->
+                    <li class="nav-item"><a class="nav-link" href="https://go.airforce.mil.kr:448/mbshome/mbs/irms/index.do">군인</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://finance.naver.com/">환율</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- div.container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+
+                    <div class="card-header">텍스트 갤러리</div>
+                <!-- ((div.list-group)br)*3 -->
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="http://webtoon.daum.net/#day=mon&tab=day">다음웹툰</a></li>
+                    <li class="list-group-item"><a href="https://www.lezhin.com/ko/scheduled?day=5">레진웹툰</a></li>
+                    <li class="list-group-item"><a href="https://www.gosi.kr/receipt/selectScheduleDetail.do">사이버국가 고시센터</a></li>
+                </ul>
+            </div>
+                <br>
+
+                <div class="card bg-info">
+                    <div class="card-header">편입 갤러리</div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://www.cb.or.kr/creditbank/base/nMain.do">학점은행제</a></li>
+                        <li class="list-group-item"><a href="http://www.cuinfo.net/home/curri/major.sub.action?gnb=322">사이버대학교</a></li>
+                    </ul>
+                </div>
+                
+
+
+
+
+                <br>
+
+                <div class="card bg-secondary">
+                    <div class="card-header"> 공부 갤러리 </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://hanja.dict.naver.com/">한자사전</a></li>
+                    <li class="list-group-item"><a href="https://papago.naver.com/">파파고</a></li>
+                </ul>
+
+            </div>
+                <br>
+
+
+
+
+            </div>
+            <div class="col-md-9">
+                <!-- div.jumbotron -->
+                <div class="jumbotron">
+                    <h1>텍스트</h1>
+                    <p> <img src="person-5843476_1920.jpg" width="760px" height="400px" </p>
+                                 
+                    <!-- a.btn.btn-primary.btn-lg[href=#]{Learn More} -->
+                    <a href="https://recruit.mnd.go.kr:450/recruit.do" class="btn btn-primary btn-lg"> 텍스트</a>
+                 
+                </div>
+
+                <h1> ※1Whether it is a mistake or a misunderstanding, it is easy to do something bad before being caught by the strong and punished or gambled.. </h1>
+                <p>※2.Most people have a government that is appropriate for party leadership, conscientiousness, and ability. </p>
+                <p>※3.I believe that the vast majority of people will get worse. So don't let me do anything wrong.</p>
+                <p>※4Revenge must be reserved and profitable. stake one's life on a worthy cause. </p>
+                <p>※5The opposite of justice is profit. Everyone is different, so take responsibility and listen to someone you like.</p>
+                <p>※6The only thing free is bait. You can see investment as much as you are interested and you can see wisdom as investment.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+    
+  </body>
+  <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 property basec</title>
+    <header>
+        <title>chapter_5</title>
+        <title>MarQuee 공군785기 김우진 </title>
+     </header>
+     <body>
+        
+        <style>
+            div {
+                border: 3px solid rgb(156, 240, 153);
+                box-shadow: 10px 10px 30px rgb(112, 243, 134);
+                text-shadow: 5px 5px 5px rgb(21, 226, 83)
+            }
+        </style>
+     </body>
+     <h2 align = "center">공군785기 김우진 </h2>
+     <p>
+         
+     <MARQUEE> 여기로 온낯선이여 환영한다. 난 대구공고 졸업생 김우진이다.</MARQUEE>
+     <!-- 움직이는 텍스트 -->
+     </p>
+     <p>
+    <nav>
+        <style>
+            div {
+                border: 3px solid rgb(143, 154, 219);
+                box-shadow: 10px 10px 30px rgb(111, 187, 223);
+                text-shadow: 5px 5px 5px rgb(123, 226, 120)
+            }
+            ul {
             overflow: hidden;
         }
 
@@ -33,65 +210,25 @@
         }
 
         li:nth-child(2n) {
-            background-color: #FF0003;
+            background-color: rgb(94, 250, 115);
         }
 
         li:nth-child(2n+1) {
-            background-color: #b9e482;
+            background-color: #7ddd7d;
         }
-    </style>
-</head>
+        </style>
+    </head>
 
-<body>
-    <div>
-        <h1>텍스트</h1>
-    </div>
-    <span>휴식처</span>
-    <div>
-        <h1>※우진 월계수관 ※
-
-            <Head>
-        </h1>
+    <body>
+        
     </div>
     <div>
         <ul>
-            <li><a href="#">menu-0</a></li>
+            <li><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%82%A0%EC%94%A8&oquery=%EC%82%AC%EB%9E%8C%EC%9D%B8&tqi=U%2FU7CdprvN8ssOLTzXKssssstol-476055">날씨</a></li>
             <li><a href="http://www.naver.com">네이버</a></li>
             <li><a href="https://www.youtube.com/">유튜브</a></li>
             <li><a href="https://www.daum.net/">다음</a></li>
-        </ul>
-        </nav>
-        <section>
-            <article>
-    </div>
-    <div>
-        <h1>갤러리</h1>
-        <p>선악균형이란? </p>
-        </article>
-        <article></article>
-        <h2>희생이란 무엇인가?</h2>
-        <p2> 깊은 생각이란?<p2>
-                </article>
-                </section>
-                <footer>
-                    <address> 주소를입력하시오(대구).</address>
-                </footer>
-    </div>
-    <span>클릭하시오</span>
-
-    <form>
-        <textarea>당신을 응원합니다.</textarea>
-    </form>
-
-    <select>
-        <option>경상도</option>
-        <option>경기도 </option>
-        <option>강원도 </option>
-        <option>전라도 </option>
-    </select>
-
-    <ul>
-        <li><a href="https://whic.mofa.go.kr/index.do">워킹홀리데이</a></li>
+            <li><a href="https://whic.mofa.go.kr/index.do">워킹홀리데이</a></li>
         <li><a href="http://www.kb.or.kr/">학원</a></li>
         <li><a href="https://ko-kr.facebook.com/">페이스북</a></li>
         <li><a href="https://comic.naver.com/genre/bestChallenge.nhn">웹툰</a></li>
@@ -101,33 +238,20 @@
                 href="https://www.google.com/search?q=%EB%89%B4%EC%8A%A4&source=lnms&tbm=nws&sa=X&ved=2ahUKEwi396rQ3oHuAhUY_GEKHQOmDTQQ_AUoAXoECCMQAw&biw=1536&bih=754">구글뉴스</a>
         </li>
     </ul>
+        
+        </nav>
+        <section>
+            <article>
+    </div>
+    
+    <ul>
+        
+    </body>
 
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Region</th>
-        </tr>
-        <tr>
-            <td>김우진</td>
-            <td>대구</td>
-        </tr>
-    </table>
-
-    <form>
-        <fieldset>
-            <legend>입력양식</legend>
-            <table>
-                <tr>
-                    <td><label for="id">아이디</label</td> <td> <input id="id" type="text" /></td>
-                </tr>
-                <tr>
-                    <td><label for="pass word">비번</label</td> <td><input password="pass word" type="pass word" /></td>
-                </tr>
-            </table>
-            <input type="submit" />
-        </fieldset>
-    </form>
-    <a href="122.html">탭바</a>
+    <body>
+    <div>
+</head>
+</html>
+    
 </body>
-
 </html>
